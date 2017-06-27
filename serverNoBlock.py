@@ -13,8 +13,8 @@ print 'wait for connection...'
 while True:
     conn, addr = s.accept()
     pid = os.fork()
-    #pid =0 ,children process
     if pid == 0:
+        # pid =0 ,children process
         #need to close s socket in the children process
         s.close()
         print 'Connected by ', addr
