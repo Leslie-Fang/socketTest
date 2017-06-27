@@ -15,12 +15,8 @@ while True:
     data = conn.recv(1024)
     print data
     #simulate the block status
-    time.sleep(10)
+    time.sleep(30)
     conn.send("server received you message.")
     #when communicate with one client need to close the socket
     conn.close()
 s.close()
-   # while True:
-   #     data = conn.recv(1024)
-   #     print data
-   #     conn.send("server received you message.")
