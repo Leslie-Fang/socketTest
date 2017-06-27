@@ -11,9 +11,6 @@ print 'Server start at: %s:%s' %(HOST, PORT)
 print 'wait for connection...'
 
 while True:
-    #服务器的端的socket有两个，s是接受监听连接的socket
-    #conn是接受了连接之后新创建的socket，conn每次通信结束之后都需要销毁
-    #conn 是新创建的socket对象
     conn, addr = s.accept()
     pid = os.fork()
     #pid =0 ,children process
