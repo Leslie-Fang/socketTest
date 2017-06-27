@@ -15,6 +15,7 @@ while True:
     data = conn.recv(1024)
     print data
     conn.send("server received you message.")
+s.close()
    # while True:
    #     data = conn.recv(1024)
    #     print data
