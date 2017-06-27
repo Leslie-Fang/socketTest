@@ -1,5 +1,5 @@
 import socket
-
+import time
 HOST = "150.95.148.104"
 PORT = 8070
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -14,6 +14,8 @@ while True:
     print 'Connected by ', addr
     data = conn.recv(1024)
     print data
+    #simulate the block status
+    time.sleep(10)
     conn.send("server received you message.")
     #when communicate with one client need to close the socket
     conn.close()
