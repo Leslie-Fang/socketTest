@@ -1,7 +1,7 @@
 import socket
 import time
 import os
-HOST = "150.95.148.104"
+HOST = "47.91.245.251"
 PORT = 8070
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((HOST, PORT))

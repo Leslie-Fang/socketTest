@@ -1,6 +1,6 @@
 import socket
 import time
-HOST = "150.95.148.104"
+HOST = "47.91.245.251"
 PORT = 8070
 
 while True:
